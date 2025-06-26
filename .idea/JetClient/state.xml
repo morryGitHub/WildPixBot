@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="id" value="690bb7b5-f5f6-4065-ab3d-e962ab48d2b7" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://api.github.com/repos/psf/requests" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="fca0298d-2b70-441b-86a7-6745f90ce23c" />
+    <option name="version" value="6" />
+  </component>
+</project>

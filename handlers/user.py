@@ -58,9 +58,11 @@ async def animal_handler(message: Message, bot: Bot):
 
             if url:
                 if url.endswith((".mp4", ".webm")):
-                    await message.answer_video(url)
+                    await message.answer_video(url,
+                                               supports_streaming=True)
                 else:
                     await message.answer_photo(url)
             else:
-                await bot.send_message(chat_id=os.getenv('OWNER'), text=f"Помилка в отриманні фотографії у юзера {message.from_user.id} = {message.from_user.username}")
+                await bot.send_message(chat_id=os.getenv('OWNER'),
+                                       text=f"Помилка в отриманні фотографії у юзера {message.from_user.id} = {message.from_user.username}")
                 await message.answer("Не удалось получить изображение 😿")
