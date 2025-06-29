@@ -17,3 +17,4 @@ async def process_last_pending_update(bot: Bot):
             chat_id=chat_id,
             text=f"🔁 Бот снова в сети!\nВы писали: {text}"
         )
+    await bot.delete_webhook(drop_pending_updates=True)
